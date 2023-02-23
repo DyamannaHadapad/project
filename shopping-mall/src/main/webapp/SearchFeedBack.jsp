@@ -9,7 +9,7 @@
 <title>Search Feed Back</title>
 <style type="text/css">
 
-/* body{
+ body{
 background: linear-gradient(
 to right,
 red,
@@ -17,7 +17,7 @@ orange,
 yellow
 );
 
-} */
+} 
 
 
 .footer {
@@ -34,7 +34,7 @@ yellow
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#"><img src="https://img.freepik.com/free-vector/shopping-mall-outside-composition-mall-building-with-tags-headlines-shops-wall_1284-58788.jpg"
    width="150" height="75"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@ yellow
 style="background-color: #27AE60">
 </div>
 <c:if test="${not empty list}">
-<table class="table table-striped table-dark">
+<table class="table table-striped table-white">
   <thead>
     <tr>
       <th>Id</th>
@@ -104,7 +104,7 @@ document.getElementById('name').innerHTML = name.value;
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer" style="background-color: white;"><a href="">© 2023 Copyright:</a>
+  <div class="footer" style="background-color: black;"><a href="">© 2023 Copyright:</a>
     <a href="">  &nbsp; Dyamanna H</a>
   </div>
   <!-- Copyright -->

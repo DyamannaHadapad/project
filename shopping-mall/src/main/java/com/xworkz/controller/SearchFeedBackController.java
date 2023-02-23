@@ -19,7 +19,6 @@ import com.xworkz.service.CustomerService;
 
 @Controller
 @RequestMapping("/search")
-
 public class SearchFeedBackController {
 
 	@Autowired

@@ -9,11 +9,12 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
+
 <style type="text/css">
 .img-icons {
 	height: 600px;
 	width: auto;
-	background-color: #f8f8ec;
+	background-color: gray;
 	border: 2px solid #e97117;
 	padding: 2em;
 	border-radius: 50%;
@@ -28,6 +29,9 @@
 	background-color: black;
 	color: white;
 	text-align: center;
+}
+body {
+	background: linear-gradient(to right, red, orange, yellow);
 }
 </style>
 
@@ -70,7 +74,7 @@
 							<div class="row g-0">
 								<div class="col-md-6 col-lg-5 d-none d-md-block">
 									<img
-										src="https://luxuryproperties.in/wp-content/uploads/2019/05/Pheonix-One-Swimming-Pool.jpg"
+										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREDqCiz7oopamSnorI1I1-tBtxF-r2lVPnng&usqp=CAU"
 										alt="login form" class="img-fluid img-icons"
 										style="border-radius: 1rem 0 0 1rem" />
 								</div>
@@ -112,10 +116,7 @@
 												<option value="Central">Central</option>
 												<option value="Rockline">Rockline</option>
 												<option value="Orion">Orion</option>
-												<!-- 	 <option value="LuLu">LuLu</option>
-    	 <option value="Gopalan">Gopalan</option>
-     	  <option value="VegCity">VegCity</option>
-       <option value="Forum">Forum</option>-->
+
 
 											</select>
 

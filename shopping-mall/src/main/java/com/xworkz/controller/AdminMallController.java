@@ -37,7 +37,7 @@ public class AdminMallController {
 		AdminMallDTO findByName = adminMallService.findByName(adminName);
 		if(findByAdminNameAndpassword == null || findByName == null) {
 			logger.info("given credentila are invalid");
-			model.addAttribute("error", "credentil are not matching   ============");
+			model.addAttribute("error", "credentil are not matching ");
 		
 		if (findByName != null && findByName.getAccountLocked().equals("locked")) {
 			logger.info("Account is locked");

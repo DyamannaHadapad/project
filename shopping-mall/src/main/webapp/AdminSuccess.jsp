@@ -12,7 +12,7 @@
 <link rel="icon" type="image/x-icon"
 	href="https://www.freeiconspng.com/thumbs/success-icon/success-icon-19.png">
 <style type="text/css">
-/* body{
+ body{
 background: linear-gradient(
 to right,
 red,
@@ -20,7 +20,7 @@ orange,
 yellow
 );
 
-} */
+} 
 .forgetpassword {
 	padding-left: 35%;
 	padding-top: 4%;
@@ -55,7 +55,7 @@ background-color: #D0D3D4;
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="#"><img
 			src="https://img.freepik.com/free-vector/shopping-mall-outside-composition-mall-building-with-tags-headlines-shops-wall_1284-58788.jpg"
 			width="150" height="75"></a>
@@ -84,7 +84,7 @@ background-color: #D0D3D4;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome To Admin Success Page</h2>
 
-
+<br><br>
 	<%-- <div style="padding-top: 3%;">
 <p style="text-align: center;font-size: x-large;color: black;">Mall Name : ${dto.name}</p>
 <p style="text-align: center;font-size: x-large;color: black;">Admin Name : ${dto.adminName}</p>
@@ -101,7 +101,7 @@ background-color: #D0D3D4;
 				<div
 					class="row d-flex justify-content-center align-items-center h-300">
 					<div class="col-12 col-md-8 col-lg-6 col-xl-5">
-						<div class="card bg-dark text-white" style="border-radius: 1rem;">
+						<div class="card bg-white text-dark" style="border-radius: 1rem;">
 							<div class="card-body p-8 text-left">
 
 								<div class="mb-md-5 mt-md-4 pb-5">
@@ -109,21 +109,21 @@ background-color: #D0D3D4;
 									<h2 class="fw-bold mb-2 text-uppercase"></h2>
 									<p class="text-white-50 mb-5"></p>
 
-									<div class="form-outline form-white mb-4">
-										<p class="btn btn-light btn-lg px-5">Mall Name :
+									<div class="form-outline form-black mb-4">
+										<p class="btn btn-dark btn-lg px-5">Mall Name :
 											${dto.name}</p>
-										<p class="btn btn-light btn-lg px-5">Admin Name :
+										<p class="btn btn-dark btn-lg px-5">Admin Name :
 											${dto.adminName}</p>
 
 									</div>
 									<div class="log">
-										<button class="btn btn-outline-light  px-4" type="submit"
+										<button class="btn btn-outline-dark  px-4" type="submit"
 											value="login">
 											<a href="CustomerInformation.jsp">Customer FeedBack</a>
 										</button>
 
 
-										<button class="btn btn-outline-light  px-4" type="submit"
+										<button class="btn btn-outline-dark  px-4" type="submit"
 											value="login">
 											<a href="SearchFeedBack.jsp">Search FeedBack</a>
 										</button>
@@ -155,7 +155,7 @@ background-color: #D0D3D4;
 	<footer class="page-footer font-small blue">
 
 		<!-- Copyright -->
-		<div class="footer" style="background-color: white;">
+		<div class="footer" style="background-color: black;">
 			<a href="">© 2023 Copyright:</a> <a href=""> &nbsp; Dyamanna H</a>
 		</div>
 		<!-- Copyright -->

@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -29,17 +30,10 @@
 	text-align: center;
 }
 
-/* 
+body {
+	background: linear-gradient(to right, red, orange, yellow);
+}
 
-body{
-background: linear-gradient(
-to right,
-red,
-orange,
-yellow
-);
-
-} */
 .fa-star {
 	font-size: 50px;
 	align-content: center;
@@ -96,7 +90,15 @@ yellow
 
 <
 --next
+
+
+
+
  
+
+
+
+
 star-->.fa-star {
 	font-size: 50px;
 	align-content: center;
@@ -147,7 +149,7 @@ star-->.fa-star {
 
 .rate1>input:checked+label:hover, .rate1>input:checked+label:hover ~
 	label, .rate1>input:checked ~ label:hover, .rate1>input:checked ~ label:hover 
-	~ label, .rate1>label:hover ~ input:checked ~ label {
+	 ~ label, .rate1>label:hover ~ input:checked ~ label {
 	color: #c59b08;
 }
 
@@ -201,7 +203,7 @@ star-->.fa-star {
 
 .rate2>input:checked+label:hover, .rate2>input:checked+label:hover ~
 	label, .rate2>input:checked ~ label:hover, .rate2>input:checked ~ label:hover 
-	~ label, .rate2>label:hover ~ input:checked ~ label {
+	 ~ label, .rate2>label:hover ~ input:checked ~ label {
 	color: #c59b08;
 }
 
@@ -224,9 +226,10 @@ star-->.fa-star {
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#"><img src="https://img.freepik.com/free-vector/shopping-mall-outside-composition-mall-building-with-tags-headlines-shops-wall_1284-58788.jpg"
-   width="150" height="75"></a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#"><img
+			src="https://img.freepik.com/free-vector/shopping-mall-outside-composition-mall-building-with-tags-headlines-shops-wall_1284-58788.jpg"
+			width="150" height="75"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -260,7 +263,7 @@ star-->.fa-star {
 
 									<div class="col-lg-6">
 										<h3 style="color: white">
-											<u>Customer Information Form :
+											<u>Customer Details : 
 										</h3>
 										<div class="p-4">
 											<div class="mb-4 pb-2">
@@ -268,8 +271,8 @@ star-->.fa-star {
 													<label class="form-label" for="form3Examplev4"
 														style="color: white">Name</label> <input type="text"
 														id="form3Examplev4" name="name" value="" ${dto.name }
-														class="form-control form-control-lg"  />
-														
+														class="form-control form-control-lg" />
+
 												</div>
 											</div>
 
@@ -303,10 +306,16 @@ star-->.fa-star {
 													<label class="form-label" for="form3Examplev4">Country
 													</label> <select class="select" name="country">
 														<option value="">---SELECT---</option>
-														<option value="india">India</option>
-														<option value="sri lanka">Sri Lanka</option>
-														<option value="dubai">Dubai</option>
-														<option value="uk">Uk</option>
+														<option value="india">INDIA</option>
+														<option value="sri lanka">SRILANKA</option>
+														<option value="dubai">USA</option>
+														<option value="uk">UK</option>
+														<option value="uk">BERLIN</option>
+														<option value="uk">DUBAI</option>
+														<option value="uk">VATICAN CITY</option>
+														<option value="uk">CANADA</option>
+														<option value="uk">SOUTH AFRICA</option>
+														<option value="uk">KOREA</option>
 													</select>
 
 												</div>
@@ -316,10 +325,16 @@ star-->.fa-star {
 														&nbsp;&nbsp;&nbsp;&nbsp;</label> <select class="select"
 														name="state">
 														<option value="---SELECT---">---SELECT---</option>
-														<option value="Karnataka">Karnataka</option>
-														<option value="Andhra">Andhra</option>
-														<option value="Tamil Nadu">Tamil Nadu</option>
-														<option value="Maharashtra">Maharashtra</option>
+														<option value="Karnataka">KARNATAKA</option>
+														<option value="Andhra">AP</option>
+														<option value="Tamil Nadu">TAMILNADU</option>
+														<option value="Maharashtra">MAHARASTRA</option>
+														<option value="Maharashtra">GOA</option>
+														<option value="Maharashtra">DELHI</option>
+														<option value="Maharashtra">TELANGANA</option>
+														<option value="Maharashtra">HIMACHAL PRADESH</option>
+														<option value="Maharashtra">JAMMU & KASMIRA</option>
+														<option value="Maharashtra">PANJAB</option>
 													</select>
 
 												</div>
@@ -329,10 +344,19 @@ star-->.fa-star {
 														&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <select
 														class="select" name="city">
 														<option value="1">---SELECT---</option>
-														<option value="Bangalore">Bangalore</option>
-														<option value="Mysore">Mysore</option>
-														<option value="Hubli">Hubli</option>
-														<option value="Belgaum">Belgaum</option>
+														<option value="Bangalore">BANGALORE</option>
+														<option value="Mysore">BAGALKOT</option>
+														<option value="Hubli">HUBLI</option>
+														<option value="Belgaum">BELLARY</option>
+														<option value="Belgaum">RAMANAGAR</option>
+														<option value="Belgaum">KALABURGI</option>
+														<option value="Belgaum">VIJAYPUR</option>
+														<option value="Belgaum">GADAG</option>
+														<option value="Belgaum">HAVERI</option>
+														<option value="Belgaum">MANGALURU</option>
+														<option value="Belgaum">SHIVAMOGGA</option>
+														<option value="Belgaum">DARAWAD</option>
+														<option value="Belgaum">DAVANGERI</option>
 													</select>
 
 												</div>
@@ -358,7 +382,7 @@ star-->.fa-star {
 					</div>
 				</div>
 			</div>
-		
+
 		</section>
 
 		<section class="h-50 h-custom gradient-custom-2">
@@ -373,7 +397,7 @@ star-->.fa-star {
 
 									<div class="col-lg-6">
 										<h3 style="color: white">
-											<u>Customer Information Form :
+											<u>Customer Feedback : 
 										</h3>
 										<br>
 										<div class="p-4">
@@ -385,8 +409,8 @@ star-->.fa-star {
 														<select class="select" name="purpose">
 															<option value="">---SELECT---</option>
 															<option value="Shoping">Shoping</option>
-															<option value="Game Playing">Game Playing</option>
-															<option value="Movie">Movie</option>
+															<option value="Game Playing">Games</option>
+															<option value="Movie">Movies</option>
 															<option value="Food Court">Food Court</option>
 														</select>
 
@@ -421,10 +445,11 @@ star-->.fa-star {
 																you Visited Food Court? :</label>
 															<td class="data_yy yyy1"><input type="radio"
 																name="visitedFoodCourt" id="yes" value="YES"
-																onclick="hideShowJacks('Y');" /><label for ="yes" style="color: white;">Yes</label> <input
-																type="radio" name="visitedFoodCourt" id="jone" value="No"
-																 onclick="hideShowJacks('N');" /><label for ="No" style="color: white;">No</label>
-															</td>
+																onclick="hideShowJacks('Y');" /><label for="yes"
+																style="color: white;">Yes</label> <input type="radio"
+																name="visitedFoodCourt" id="jone" value="No"
+																onclick="hideShowJacks('N');" /><label for="No"
+																style="color: white;">No</label></td>
 															<!-- <td class="data_xx xxx1"> Are you in high school?</td> -->
 														</tr>
 													</table>
@@ -451,15 +476,17 @@ star-->.fa-star {
 																you Visited Rest Room? :</label>
 															<td class="data_yy yyy1"><input type="radio"
 																name="visitedRestRooms" id="jack" value="Yes"
-																onclick="hideShowJacks1('Yes');" /><label for ="YES" style="color: white;">Yes</label> <input
-																type="radio" name="visitedRestRooms" id="jack"
-																value="No" onclick="hideShowJacks1('No');" /><label for ="No" style="color: white;">No</label>
-															</td>
+																onclick="hideShowJacks1('Yes');" /><label for="YES"
+																style="color: white;">Yes</label> <input type="radio"
+																name="visitedRestRooms" id="jack" value="No"
+																onclick="hideShowJacks1('No');" /><label for="No"
+																style="color: white;">No</label></td>
 															<!-- <td class="data_xx xxx1"> Are you in high school?</td> -->
 														</tr>
 													</table>
 
-													<textarea id="area1" name="visitedRestRooms" style="display: none;"></textarea>
+													<textarea id="area1" name="visitedRestRooms"
+														style="display: none;"></textarea>
 													<script type="text/javascript">
 														function hideShowJacks1(
 																val2) {
@@ -522,7 +549,7 @@ star-->.fa-star {
 													</div>
 													<div class=" mb-4 pb-2 ">
 														<div class="form-outline">
-															<label class="form-label" for="form3Examplev4">totalExperience</label>
+															<label class="form-label" for="form3Examplev4"></label>
 															<textarea class="form-control form-control-lg"
 																name="feedBack" rows="4" cols="50"></textarea>
 														</div>
@@ -535,11 +562,11 @@ star-->.fa-star {
 							</div>
 						</div>
 						<div
-			style="padding-left: 50%; padding-top: 2%; font-size: x-large; font-weight: bold;">
-			<button type="submit" value="save"
-				style="text-align: center; padding-left: 10%; padding-right: 10%;"
-				data-mdb-ripple-color="dark">Save</button>
-		</div>
+							style="padding-left: 50%; padding-top: 2%; font-size: x-large; font-weight: bold;">
+							<button type="submit" value="save"
+								style="text-align: center; padding-left: 10%; padding-right: 20%;"
+								data-mdb-ripple-color="black">Save</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -612,18 +639,19 @@ star-->.fa-star {
 		src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
-		
-		<!-- Footer -->
-<footer class="page-footer font-small blue">
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style="background-color: white;"><a href=""> © 2023 Copyright:</a>
-    <a href="">  &nbsp; Dyamanna H</a>
-  </div>
-  <!-- Copyright -->
+	<!-- Footer -->
+	<footer class="page-footer font-small blue">
 
-</footer>
-<!-- Footer -->
-		
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3"
+			style="background-color: black;">
+			<a href=""> © 2023 Copyright:</a> <a href=""> &nbsp; Dyamanna H</a>
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+
 </body>
 </html>

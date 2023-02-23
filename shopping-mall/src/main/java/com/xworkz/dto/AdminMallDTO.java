@@ -68,12 +68,18 @@ public class AdminMallDTO extends AbstractDTO implements Serializable {
 	private LocalTime time;
 	@Column(name = "genaratedPasswordTime")
 	private LocalTime generatedPasswordTime;
+	private String fileName;
+	private long fileSize;
+	private String contentType;
+	private String fileType;
 
 	public AdminMallDTO(String createdBy, LocalDateTime createdByDate, String updatedBy, LocalDateTime updatedByDate,
-			String name, String adminName, String password, boolean active, String accountLocked, int noOfWrongAttempt,
-			String mallEmail, int firstLogin, String generatedPassword, int loginCount, LocalTime time,
-			LocalTime generatedPasswordTime) {
+			int id, String name, String adminName, String password, boolean active, String accountLocked,
+			int noOfWrongAttempt, String mallEmail, int firstLogin, String generatedPassword, int loginCount,
+			LocalTime time, LocalTime generatedPasswordTime, String fileName, long fileSize, String contentType,
+			String fileType) {
 		super(createdBy, createdByDate, updatedBy, updatedByDate);
+		this.id = id;
 		this.name = name;
 		this.adminName = adminName;
 		this.password = password;
@@ -86,7 +92,10 @@ public class AdminMallDTO extends AbstractDTO implements Serializable {
 		this.loginCount = loginCount;
 		this.time = time;
 		this.generatedPasswordTime = generatedPasswordTime;
-
+		this.fileName = fileName;
+		this.fileSize = fileSize;
+		this.contentType = contentType;
+		this.fileType = fileType;
 	}
 
 	public int getId() {
@@ -193,5 +202,36 @@ public class AdminMallDTO extends AbstractDTO implements Serializable {
 		this.generatedPasswordTime = generatedPasswordTime;
 	}
 
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	public long getFileSize() {
+		return fileSize;
+	}
+
+	public void setFileSize(long fileSize) {
+		this.fileSize = fileSize;
+	}
+
+	public String getContentType() {
+		return contentType;
+	}
+
+	public void setContentType(String contentType) {
+		this.contentType = contentType;
+	}
+
+	public String getFileType() {
+		return fileType;
+	}
+
+	public void setFileType(String fileType) {
+		this.fileType = fileType;
+	}
 
 }
